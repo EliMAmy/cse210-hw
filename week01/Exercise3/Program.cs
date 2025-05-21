@@ -42,15 +42,16 @@ class Program
                     int newNumber = randomGeneratornew.Next(1, 50);
                     tries = 0;
                     again = "yes";
+
                 }
                 else
                 {
                     again = "no";
                 }
 
-                }
             }
+        }
         Console.WriteLine($"The number of tries is {tries}");
     }
         
-    }
+}
