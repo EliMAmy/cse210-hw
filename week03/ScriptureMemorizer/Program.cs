@@ -4,6 +4,39 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello World! This is the ScriptureMemorizer Project.");
+        string theBook = "Proverbs";
+        int theChapter = 3;
+        int theVerse = 5;
+        int theEndVerse = 6;
+
+        string text = "in Trust the Lord with all thine heart; and lean not unto thine own understanding. In all thy ways acknowledge him, and he shall direct thy paths.";
+        Console.WriteLine($"{theBook} {theChapter}: {theVerse}-{theEndVerse} {text}");
+        List<string> words = text.Split(' ').ToList();
+        foreach (string str in words)
+        {
+            
+        }
+
+        
+
+
+
+        int again = 0;
+        while (again == 0)
+        {
+            Console.WriteLine("Press enter to continue or type quit to finish:");
+            string answer = Console.ReadLine();
+
+            if (answer != "quit")
+            {
+                Console.Clear();
+                
+            }
+            else
+            {
+                again = 1;
+            }
+        }
+        
     }
 }
