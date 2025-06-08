@@ -3,11 +3,14 @@ public class Word
     private string _text;
     private bool _isHidden;
 
-    public Word(string text)
+    public string GetWord()
+    {
+        return _text;
+    }
+    public void SetWord(string text)
     {
         _text = text;
 
-        
     }
     public void Hide()
     {
@@ -17,12 +20,12 @@ public class Word
     {
 
     }
-    public bool _IsHidden()
+/*     public bool _IsHidden()
     {
 
     }
     public string GetDisplayText()
     {
         
-    }
+    } */
 }
